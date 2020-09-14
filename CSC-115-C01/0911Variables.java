@@ -5,6 +5,7 @@
 public class Variables {
     public static void main(String[] args){
         variables(); // a method to investigate variables
+        aboutStrings(); // a method to look at String output
     }
     
     //in this method we will look at variables
@@ -55,10 +56,74 @@ public class Variables {
         // Reassign the value of 'gpa'
         gpa = 2.7;
         System.out.println("Your gpa is now " + gpa);
-   
-           
+        
+        // IN GENERAL: 
+        
+        // int      num     =   28;
+        // type
+        //          name
+        //                      value  
+        
+        
+        int num1 = 4;
+        int num2 = 5;
+        
+        // you can do stuff with variables - print, math, etc. 
+        
+        int sum = num1 + num2;
+        System.out.println(sum);  // 9
+        
+        
+        int x;     // x has been DECLARED but it has not been ASSIGNED
+        
+        //System.out.println(x); // error! needs to be initialized 
+        
+        
+        // You try!
+        // Make a new class or add on to your PrintQuote.java  
+        // 1. Declare 2 int variables and assign them values
+        // 2. Display the sum
+        // 3. Display the product
+    }
+    
+    // in this method we will look at Strings 
+    
+    public static void aboutStrings() {
+        
+        // STRING 
+        // A variable that holds a bunch of characters (like a word)
+        // String is a class (note the uppercase), but we can use it
+        // like a primitive  
+        
+        String firstName = "Carrie";  // note the camelCase
+        System.out.println(firstName + " " + "Krueger"); // concatenation
+        
+        // Mixing Strings and numbers is a tricky business 
+        
+        System.out.println("3 + 4");
+        
+        System.out.println(3 + 4);
+        
+        System.out.println(3 + 4 + " = 3 + 4");
+        
+        System.out.println("3 + 4 = " + 3 + 4); // concatenates onto the String
+        
+        System.out.println("3 + 4 = " + (3 + 4));  // order of ops helps
+        
+        System.out.println(3 - 4);
+        
+        //System.out.println("3 - 4 = " + 3 - 4); // error!
+        
+        System.out.println("3 - 4 = " + (3 - 4));
+        
+        int difference = 3 - 4;
+        
+        System.out.println(difference);
         
         
     }
+    
+
+    
+    
 }
-© 2020 GitHub, Inc.
