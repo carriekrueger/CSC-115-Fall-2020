@@ -98,7 +98,40 @@ public class MoreIfs {
         if(num > 100) {
             System.out.println("Really big number!");
         }
-       
+        
+        // boolean logic operators 
+        
+        num = 37;
+        
+        // OR
+        
+        if(num >= 40 || num <= 10) {
+            System.out.println("You win!!");
+        }
+        
+        // AND   ** short-circuit 
+        if(num >= 40 && num <= 60) {
+            System.out.println("Num is in range!");
+        }
+        
+        
+        /* One more option: Switch Statements 
+           Textbook 6.3
+           Pros and Cons:
+           -if/else statements can handle ranges
+           -switch statements can only handle exact values 
+           -switch statements can only be used with certain primitives
+           and Strings
+           -if/else can get messy with { }, more prone to errors
+           (syntax and logic) 
+        */
+        
+        
+        
+  
+        
+        
+
         
         
         
