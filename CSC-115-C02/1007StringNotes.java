@@ -65,10 +65,48 @@ public class StringNotes {
         
         System.out.println(); 
         
+        String s1 = "Star Trek";
+        String s2 = "Star Wars";
+        
+        // substring(position) returns a part of the String 
+        // from position to the end 
+        
+        System.out.println(s1.substring(5));  //Trek
+        
+        // substring(start, end) returns a part of the String
+        // from start to end - 1 (end not included)
+        
+        System.out.println(s1.substring(1, 8)); //tar Tre
+        
+        System.out.println();
+        
+        // indexOf(character) return the first index of that character
+        // in the String 
+        
+        System.out.println(s1.indexOf('T')); //5
+        System.out.println(s1.indexOf('Z')); //-1 (not there)
+        
+        // indexOf(String) returns the first index of the String
+        // in the String 
+        
+        System.out.println(s1.indexOf("Star")); //0
+        
+        System.out.println();
+        
+        // comparing two Strings: DON'T USE == 
+        // .equals method
+        
+        System.out.println(s1.equals(s2)); //false 
+        System.out.println(s1.equals(s1)); //true 
+        
+        String s3 = "STAR TREK";
+        
+        System.out.println(s1.equalsIgnoreCase(s3)); //true 
         
         
+ 
         
-                
         
+
     }
 }
