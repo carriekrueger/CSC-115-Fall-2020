@@ -75,8 +75,69 @@ public class ArrayNotes {
         */ 
         
         System.out.println(temps[3]); // 26
-
+        
+         // Make an array for monthly temps? 30 ints..
+        
+        int[] monthlyTemps = new int[30];
+        
+        // back to the daily temps
+        
+        //print the first element in the array  - position 0
+        System.out.println("First: " + temps[0]);  // 29
+        
+        // print the last element - position 6 (seventh element)
+        System.out.println("Last: " + temps[6]);
+        
+        // position 7? 
+        //System.out.println( temps[7]);  // ArrayIndexOutOfBounds error
+        
+        //print the last element for any array - position length - 1
+        System.out.println("Last: " + temps[temps.length - 1]);
+        
+        // how to print entire array? 
+        
+        System.out.println(temps);  // prints memory address 
+        
+        // use a for loop to print every element 
+        
+        for(int i = 0; i < temps.length; i++) {
+            System.out.print(temps[i] + " ");
+        }
+        
+        System.out.println();  // so the next thing prints on the next line
+        
+        // Arrays act just like Strings!
+        
+        String s = "abcdefg";
+        System.out.println(s.length()); // 7
+        // for Strings, length() is a method, for arrays it's a variable
+        
+         System.out.println(s.charAt(0)); // a
+         System.out.println(s.charAt(6)); // g
+         //System.out.println(s.charAt(7));  // StringIndexOutOfBounds error
+         System.out.println(s.charAt(s.length() - 1)); // g
+        
+        
+         // sending an array as a parameter to a method 
+         printArray(temps);
         
         
     }
+    
+    // this method takes an array and prints it out
+    
+    // note: when you send an array as a parameter to a method, any changes made
+    // to the array will stick when the method is done (not changing anything here)
+    public static void printArray(int[] a) {
+        for(int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+    
+    
+
+        
+        
+    
 }
